@@ -1,9 +1,14 @@
 <launch>
   <env name="GAZEBO_RESOURCE_PATH" value="$(find turtlebot3_gazebo)/models/turtlebot3_autorace/ground_picture" />
 
-  <arg name="x_pos" default="0.245"/>
+  <!--arg name="x_pos" default="0.245"/>
   <arg name="y_pos" default="-1.787"/>
-  <arg name="z_pos" default="0"/>  
+  <arg name="z_pos" default="0"-->  
+
+  <arg name="x_pos" default="-1.765"/>
+  <arg name="y_pos" default="-0.15"/>
+  <arg name="z_pos" default="0"/>
+  <arg name="yaw" default="0"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_autorace.world" />
